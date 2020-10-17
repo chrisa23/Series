@@ -3,11 +3,11 @@
 open System
 open System.Diagnostics
 open FsUnit
-open NUnit.Framework
+open Xunit
 open Series
 open TestHelpers
 
-[<Test>]
+[<Fact>]
 let sma_test1 ()=
     let s = series(128)
     let sma = s.SMA(5)
